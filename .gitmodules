@@ -1,0 +1,27 @@
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "bundle/jellybeans"]
+	path = bundle/jellybeans
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "bundle/zoomwin"]
+	path = bundle/zoomwin
+	url = https://github.com/vim-scripts/ZoomWin.git
+[submodule "bundle/colorv"]
+	path = bundle/colorv
+	url = https://github.com/Rykka/colorv.vim.git
+[submodule "bundle/delimitmate"]
+	path = bundle/delimitmate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundle/minibufexpl"]
+	path = bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/vim-latex"]
+	path = bundle/vim-latex
+	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
