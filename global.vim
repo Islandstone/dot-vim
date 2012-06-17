@@ -1,4 +1,5 @@
 call pathogen#infect()
+set nocompatible
 syntax on
 filetype plugin indent on
 
@@ -20,6 +21,27 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set nowrap
+
+" The current file time
+function! FileTime()
+  let ext=tolower(expand("%:e"))
+  let fname=tolower(expand('%<'))
+  let filename=fname . '.' . ext
+  let msg=" "
+  let msg=msg." ".strftime("(%d. %b %y %H:%M)",getftime(filename))
+  return msg
+endfunction
+
+" The current system time, displayed to the right
+function! CurTime()
+  let ftime=""
+  let ftime=ftime." ".strftime("%d. %b %y %H:%M")
+  return ftime
+endfunction
+
+"Status line definition
+set statusline=%<:b\ %n\ %f:%Y\ [%{fugitive#head()}]%<%{FileTime()}%<\ %m%=%-1.(%l/%L%)%=%{CurTime()}\ 
+set laststatus=2
 
 " Color column
 set colorcolumn=80
