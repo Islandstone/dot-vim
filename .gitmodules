@@ -37,3 +37,18 @@
 [submodule "bundle/SQLUtil"]
 	path = bundle/SQLUtil
 	url = git://github.com/vim-scripts/SQLUtilities.git
+[submodule "bundle/vim-distraction-free"]
+	path = bundle/vim-distraction-free
+	url = https://github.com/laktek/distraction-free-writing-vim.git
+[submodule "bundle/tasklist"]
+	path = bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim
+[submodule "bundle/vim-fswitch"]
+	path = bundle/vim-fswitch
+	url = https://github.com/derekwyatt/vim-fswitch.git
+[submodule "bundle/Align"]
+	path = bundle/Align
+	url = git://github.com/vim-scripts/Align.git
+[submodule "bundle/omnicppcomplete"]
+	path = bundle/omnicppcomplete
+	url = https://github.com/vim-scripts/OmniCppComplete
