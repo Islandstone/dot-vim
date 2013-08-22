@@ -1,0 +1,1 @@
+setlocal cino+=g0
