@@ -61,3 +61,27 @@
 [submodule "bundle/vim-golang"]
 	path = bundle/vim-golang
 	url = git://github.com/jnwhiteh/vim-golang.git
+[submodule "bundle/covim"]
+	path = bundle/covim
+	url = https://github.com/FredKSchott/CoVim.git
+[submodule "bundle/pyflakes-pathogen"]
+	path = bundle/pyflakes-pathogen
+	url = https://github.com/mitechie/pyflakes-pathogen
+[submodule "bundle/vim-makegreen"]
+	path = bundle/vim-makegreen
+	url = https://github.com/reinh/vim-makegreen
+[submodule "bundle/vim-nosecompiler"]
+	path = bundle/vim-nosecompiler
+	url = https://github.com/olethanh/Vim-nosecompiler.git
+[submodule "bundle/vim-jedi"]
+	path = bundle/vim-jedi
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "bundle/bubblegum"]
+	path = bundle/bubblegum
+	url = https://github.com/baskerville/bubblegum.git
+[submodule "bundle/mango"]
+	path = bundle/mango
+	url = https://github.com/goatslacker/mango.vim.git
+[submodule "bundle/vim-kolor"]
+	path = bundle/vim-kolor
+	url = https://github.com/zeis/vim-kolor.git
