@@ -81,3 +81,12 @@ let g:makegreen_stay_on_file = 1
 
 " Syntastic settings
 let g:syntastic_python_checkers=['pylint']
+
+" Convenient folding shortcut
+function! g:foldWithSpace()
+    nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<CR>
+    vnoremap <Space> zf
+endf
+
+" CTAGS refresh
+map <Leader>x :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
