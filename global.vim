@@ -1,4 +1,5 @@
 call pathogen#infect()
+
 set nocompatible
 syntax on
 filetype plugin indent on
@@ -7,7 +8,7 @@ filetype plugin indent on
 set nobackup
 
 " UI style options
-colorscheme jellybeans
+colorscheme desert
 set guifont=Inconsolata\ 13
 set guicursor+=a:blinkon0
 set guioptions-=rLt
@@ -49,25 +50,34 @@ set number
 set numberwidth=5
 
 " Template loading
-function! LoadTemplate()
-    silent! 0r ~/.vim/templates/template.%:e
-endfunction
-autocmd! BufNewFile * call LoadTemplate()
+" function! LoadTemplate()
+"     silent! 0r ~/.vim/templates/template.%:e
+" endfunction
+" autocmd! BufNewFile * call LoadTemplate()
 
 " Some useful mappings
 inoremap jj <ESC>
 noremap <Leader><Leader> <ESC>:ZoomWin<CR>
 
 " Moving lines up and down
-nnoremap <C-j> :m+<CR>==
-nnoremap <C-k> :m-2<CR>==
-inoremap <C-j> <ESC>:m+<CR>==gi
-inoremap <C-k> <ESC>:m-2<CR>==gi
-vnoremap <C-k> :m-2<CR>gv=gv
-vnoremap <C-j> :m'>+<CR>gv=gv
+nnoremap <C-S-j> :m+<CR>==
+nnoremap <C-S-k> :m-2<CR>==
+"inoremap <C-S-j> <ESC>:m+<CR>==gi
+"inoremap <C-S-k> <ESC>:m-2<CR>==gi
+vnoremap <C-S-k> :m-2<CR>gv=gv
+vnoremap <C-S-j> :m'>+<CR>gv=gv
 
 " Tag List options
 let g:Tlist_Use_Right_Window=1
 
 " DelimitMate options
 let g:delimitMate_expand_cr=1
+
+let c_no_comment_fold=1
+
+" Use nosetest(2) as compiler, so that we can use make to run tests
+autocmd BufNewFile,BufRead *.py compiler nose
+let g:makegreen_stay_on_file = 1
+
+" Syntastic settings
+let g:syntastic_python_checkers=['pylint']
